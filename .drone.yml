@@ -2,4 +2,8 @@ pipeline:
   clone:
     path: src/github.com/pkumarbe/cicd-test
   build:
-    image: "plugins/docker:latest"
+    #image: "plugins/docker:latest"
+    image: node:latest
+  script:
+    - npm install
+    - npm run compile
