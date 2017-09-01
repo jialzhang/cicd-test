@@ -1,5 +1,4 @@
-pipeline:
-  build:
-    image: debian:latest
-  commands:
-     - echo "Hello"
+image: debian:latest
+script:
+ - npm install
+ - npm run compile
