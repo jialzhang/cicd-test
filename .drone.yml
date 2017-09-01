@@ -1,8 +1,6 @@
 pipeline:
-  build: 
-      image: "plugins/docker:latest"
-      dry_run: true
-      dockerfile: .dockerfile
-      when:
-        branch:
-          exclude: master
+	clone:
+  		path: github.com/pkumarbe/cicd-test
+
+	build:
+  		image: golang:1.8
