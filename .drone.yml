@@ -1,9 +1,4 @@
 pipeline:
-  clone:
-      image: plugins/git
-      recursive: true
-      tags: true
-      submodule-update-remote: true
   build: 
       image: "plugins/docker:latest"
       dry_run: true
