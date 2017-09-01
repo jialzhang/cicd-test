@@ -1,5 +1,5 @@
 pipeline:
   clone:
-    path: github.com/pkumarbe/cicd-test
+    path: src/github.com/pkumarbe/cicd-test
   build:
-    image: golang:1.8
+    image: "plugins/docker:latest"
