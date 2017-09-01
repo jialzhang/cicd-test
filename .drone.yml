@@ -1,0 +1,6 @@
+pipeline:
+  clone:
+    image: plugins/git
+    recursive: true
+    tags: true
+    submodule-update-remote: true
