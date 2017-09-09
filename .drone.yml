@@ -2,4 +2,4 @@ pipeline:
   mynewtask:
     image: redis
     commands:
-      - redis-server
+	- env
