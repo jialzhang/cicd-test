@@ -1,5 +1,5 @@
 pipeline:
   mynewtask:
-    image: drone
+    image: redis
     commands:
 	- env
