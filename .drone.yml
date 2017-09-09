@@ -3,3 +3,5 @@ pipeline:
     image: drone/drone
     commands:
 	- env
+    when:
+        event: push
