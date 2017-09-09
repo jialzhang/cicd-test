@@ -1,4 +1,6 @@
-build:
-  image: "plugins/docker:latest"
-  dry_run: true
-  dockerfile: Dockerfile
+pipeline:
+  build:
+    image: golang
+    commands:
+      - go build
+      - go test
